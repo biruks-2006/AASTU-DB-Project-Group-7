@@ -27,3 +27,5 @@ The system aims to:
 
 Logical schema 
 <img width="3928" height="1628" alt="image" src="https://github.com/user-attachments/assets/3a609d9c-2c07-4bff-b348-54b7bd6159f6" />
+ER Diagram
+<img width="1280" height="970" alt="image" src="https://github.com/user-attachments/assets/81714865-439a-4780-b771-24f098a7dfbb" />
