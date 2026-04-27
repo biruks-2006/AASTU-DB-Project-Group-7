@@ -25,4 +25,5 @@ The system aims to:
 -  Ensure real-time room availability updates  
 -  Improve data accuracy, accessibility, and overall operational efficiency  
 
----
+Logical schema 
+<img width="3928" height="1628" alt="image" src="https://github.com/user-attachments/assets/3a609d9c-2c07-4bff-b348-54b7bd6159f6" />
