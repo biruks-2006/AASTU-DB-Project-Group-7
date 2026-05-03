@@ -1,2 +1,48 @@
+[4/30/2026 5:56 AM] Biruk: 1. Guest Registration Form
+
+Guest Full Name: _______________________________
+Phone Number: _______________________________
+Email Address: _______________________________
+Nationality: _______________________________
+ID/Passport Number: _______________________________
+Address: _______________________________
+
+2. Room Booking Form
+
+Guest Name: _______________________________
+Check-in Date: ___________   Check-out Date: ___________
+Room Type: [ ] Single  [ ] Double  [ ] Deluxe  [ ] Suite
+Number of Guests: ___________
+Special Requests: ________________________________________
+
+3. Check-in / Check-out Form
+
+Booking ID: ___________
+Guest Name: _______________________________
+Room Number: ___________
+Check-in Date & Time: ___________________
+Check-out Date & Time: ___________________
+
+4. Room Service Order Form
+
+Room Number: ___________
+Guest Name: _______________________________
+Order Date: ___________
+Items Ordered:
+Item 1: ___________ Qty: ___ Price: ________
+Item 2: ___________ Qty: ___ Price: ________
+Item 3: ___________ Qty: ___ Price: ________
+
+Total Amount: ___________
+Special Request: ________________________________
+
+5. Payment Receipt
+
+Receipt No: ___________
+Guest Name: _______________________________
+Booking ID: ___________
+Amount Paid: ___________
+Payment Method: [ ] Cash  [ ] Card  [ ] Mobile Money
+Date: ___________
 
 
