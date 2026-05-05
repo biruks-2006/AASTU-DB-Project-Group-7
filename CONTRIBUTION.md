@@ -19,44 +19,55 @@
 ### Beka Solomon (Project Coordinator)
 
 - Managed group meetings and task distribution
-- Created and maintained GitHub repository structure
+- Implemented complete MySQL database schema
+- Wrote all MySQL tables with proper constraints
+- Created logical schema design
+- Developed complex queries for reports
+- Performed MySQL testing and debugging
 - Coordinated between team members
-- Final project integration and submission
 
 ### Deborah Mesfin (Business Analyst & Documentation)
 
 - Conducted background research on Addis Grand Hotel
 - Wrote Chapter 1 (Introduction, Problem Statement, Objectives)
-- Prepared survey questions for Annex
-- Helped with report formatting and references
+- Designed the Entity-Relationship (ER) Diagram
+- Performed normalization up to BCNF
+- Prepared normalization.pdf document
 
 ### Biruk Molla (Database Designer)
 
-- Designed the Entity-Relationship (ER) Diagram
-- Performed normalization up to BCNF
-- Created logical schema design
-- Prepared normalization.pdf document
-
-### Abreham Teshale (MySQL Implementation Lead)
-
-- Implemented complete MySQL database schema
-- Wrote all MySQL tables with proper constraints
-- Developed complex queries for reports
-- Performed MySQL testing and debugging
-
-### Awach Awach Garang (MongoDB Implementation Lead)
-
+- Created and maintained GitHub repository structure
 - Designed MongoDB collections (reviews, roomServiceOrders)
 - Created collections.json with sample data
 - Wrote MongoDB queries (queries.js)
 - Tested MongoDB operations and aggregations
+- Final project integration and submission
+
+### Abreham Teshale (MySQL Implementation Lead)
+
+- Designed the Entity-Relationship (ER) Diagram
+- Performed normalization up to BCNF
+- Prepared normalization.pdf document
+- Conducted background research on Addis Grand Hotel
+- Wrote Chapter 1 (Introduction, Problem Statement, Objectives)
+
+### Awach Garang (MongoDB Implementation Lead)
+
+- Helped with report formatting and references
+- Prepared survey questions for Annex
+- Prepared sample forms for Annex
+- Designed and formatted the final presentation slides
+- Compiled final report
+- Took screenshots of implementation results
 
 ### Gakeer Deng (Documentation & Presentation Lead)
 
 - Designed and formatted the final presentation slides
-- Prepared sample forms for Annex
 - Compiled final report
 - Took screenshots of implementation results
+- Helped with report formatting and references
+- Prepared survey questions for Annex
+- Prepared sample forms for Annex
 
 ---
 
