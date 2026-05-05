@@ -1,8 +1,3 @@
--- =============================================
--- HOTEL MANAGEMENT SYSTEM - MySQL Schema
--- =============================================
-
--- 1. Room Type Table
 CREATE TABLE RoomType (
     type_id INT PRIMARY KEY AUTO_INCREMENT,
     type_name VARCHAR(50) NOT NULL,           -- Single, Double, Deluxe, Suite, etc.
@@ -11,8 +6,6 @@ CREATE TABLE RoomType (
     description TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- 2. Room Table
 CREATE TABLE Room (
     room_id INT PRIMARY KEY AUTO_INCREMENT,
     room_number VARCHAR(10) UNIQUE NOT NULL,   -- e.g., A-101, B-205
@@ -22,8 +15,6 @@ CREATE TABLE Room (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (type_id) REFERENCES RoomType(type_id)
 );
-
--- 3. Guest Table
 CREATE TABLE Guest (
     guest_id INT PRIMARY KEY AUTO_INCREMENT,
     full_name VARCHAR(100) NOT NULL,
@@ -34,8 +25,6 @@ CREATE TABLE Guest (
     id_number VARCHAR(50),                     -- Passport or National ID
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- 4. Booking Table
 CREATE TABLE Booking (
     booking_id INT PRIMARY KEY AUTO_INCREMENT,
     guest_id INT NOT NULL,
@@ -46,8 +35,6 @@ CREATE TABLE Booking (
     booking_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (guest_id) REFERENCES Guest(guest_id)
 );
-
--- 5. Booking_Room (Junction Table for Many-to-Many)
 CREATE TABLE BookingRoom (
     booking_id INT NOT NULL,
     room_id INT NOT NULL,
@@ -55,8 +42,6 @@ CREATE TABLE BookingRoom (
     FOREIGN KEY (booking_id) REFERENCES Booking(booking_id) ON DELETE CASCADE,
     FOREIGN KEY (room_id) REFERENCES Room(room_id) ON DELETE RESTRICT
 );
-
--- 6. Payment Table
 CREATE TABLE Payment (
     payment_id INT PRIMARY KEY AUTO_INCREMENT,
     booking_id INT NOT NULL,
@@ -66,8 +51,6 @@ CREATE TABLE Payment (
     transaction_id VARCHAR(100),
     FOREIGN KEY (booking_id) REFERENCES Booking(booking_id)
 );
-
--- 7. Staff Table (Optional but good for normalization)
 CREATE TABLE Staff (
     staff_id INT PRIMARY KEY AUTO_INCREMENT,
     full_name VARCHAR(100) NOT NULL,
@@ -81,15 +64,12 @@ CREATE TABLE Staff (
 -- =============================================
 -- Sample Data
 -- =============================================
-
--- Insert Room Types
 INSERT INTO RoomType (type_name, price_per_night, max_occupancy, description) VALUES
 ('Single', 850.00, 1, 'Standard single room with one bed'),
 ('Double', 1200.00, 2, 'Room with one double bed'),
 ('Deluxe', 1800.00, 2, 'Spacious room with better amenities'),
 ('Suite', 3500.00, 4, 'Luxury suite with living area');
 
--- Insert Rooms
 INSERT INTO Room (room_number, type_id, status, floor_number) VALUES
 ('A-101', 1, 'Available', 1),
 ('A-102', 2, 'Available', 1),

@@ -6,14 +6,13 @@
 
 ## Group Members
 
-| No  | Name               | ID          | Role                              | Main Contributions                                                        |
-| --- | ------------------ | ----------- | --------------------------------- | ------------------------------------------------------------------------- |
-| 1   | Beka Solomon       | ETS 0242/17 | Project Coordinator               | Project planning, GitHub management, timeline tracking, final integration |
-| 2   | Deborah Mesfin     | ETS 0434/17 | Business Analyst & Documentation  | Chapter 1 writing, Problem Statement, Objectives, Report formatting       |
-| 3   | Biruk Molla        | ETS 0336/17 | Database Designer                 | ER Diagram, Normalization process, Logical schema design                  |
-| 4   | Abreham Teshale    | ETS 0076/17 | MySQL Implementation Lead         | MySQL schema design, tables creation, queries.sql, testing                |
-| 5   | Awach Awach Garang | ETS 1869/17 | MongoDB Implementation Lead       | MongoDB collections, queries.js, NoSQL design and testing                 |
-| 6   | Gakeer Deng        | ETS 1865/17 | Documentation & Presentation Lead | Presentation slides, Annex documents, final report compilation            |
+| No | Name | ID | Role or Main Contributions
+| 1 | Beka Solomon | ETS 0242/17 | Database Designer | MySQL schema design, tables creation, queries.sql, testing |
+| 2 | Deborah Mesfin | ETS 0434/17 | Business Analyst & Documentation | Chapter 1 writing, Problem Statement, Objectives, Report formatting |
+| 3 | Biruk Molla | ETS 0336/17 | MongoDB Implementation Lead | final integration | MongoDB collections, queries.js, NoSQL design and testing |
+| 4 | Abreham Teshale | ETS 0076/17 | ER Diagram, Normalization process, Logical schema design |
+| 5 | Awach Garang | ETS 1869/17 | Annex documents | Project Coordinator | Project planning, GitHub management, timeline tracking,
+| 6 | Gakeer Deng | ETS 1865/17 | Documentation & Presentation Lead | Presentation slides, , final report compilation |
 
 ## Detailed Contributions
 

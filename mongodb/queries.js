@@ -1,12 +1,3 @@
-// =============================================
-// HOTEL MANAGEMENT SYSTEM - MongoDB Queries
-// =============================================
-
-use("hotel_management");
-
-// ====================== INSERT SAMPLE DATA ======================
-
-// Sample Reviews
 db.reviews.insertMany([
   {
     guestName: "Biruk Alemu",
@@ -33,7 +24,6 @@ db.reviews.insertMany([
   },
 ]);
 
-// Sample Room Service Orders
 db.roomServiceOrders.insertMany([
   {
     guestId: "G123",
@@ -49,29 +39,20 @@ db.roomServiceOrders.insertMany([
   },
 ]);
 
-// ====================== IMPORTANT QUERIES ======================
-
-// 1. Show all reviews
 db.reviews.find().pretty();
 
-// 2. High rated reviews (greater than 4)
 db.reviews.find({ overallRating: { $gt: 4 } });
 
-// 3. Reviews for a specific room
 db.reviews.find({ roomNumber: "A-101" });
 
-// 4. Average hotel rating
 db.reviews.aggregate([
   { $group: { _id: null, averageRating: { $avg: "$overallRating" } } },
 ]);
 
-// 5. Recent room service orders
 db.roomServiceOrders.find().sort({ orderDate: -1 });
 
-// 6. Total number of reviews
 db.reviews.countDocuments();
 
-// ====================== UPDATE EXAMPLE ======================
 db.reviews.updateOne(
   { guestName: "Meron Tesfaye" },
   { $set: { overallRating: 4.5 } },
