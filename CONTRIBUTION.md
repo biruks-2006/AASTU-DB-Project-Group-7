@@ -16,7 +16,7 @@
 
 ## Detailed Contributions
 
-### Beka Solomon (Project Coordinator)
+### Beka Solomon (MongoDB Implementation Lead)
 
 - Managed group meetings and task distribution
 - Implemented complete MySQL database schema
@@ -26,7 +26,7 @@
 - Performed MySQL testing and debugging
 - Coordinated between team members
 
-### Deborah Mesfin (Business Analyst & Documentation)
+### Deborah Mesfin (Database Designer)
 
 - Conducted background research on Addis Grand Hotel
 - Wrote Chapter 1 (Introduction, Problem Statement, Objectives)
@@ -34,7 +34,7 @@
 - Performed normalization up to BCNF
 - Prepared normalization.pdf document
 
-### Biruk Molla (Database Designer)
+### Biruk Molla (MySQL Implementation Lead)
 
 - Created and maintained GitHub repository structure
 - Designed MongoDB collections (reviews, roomServiceOrders)
@@ -43,7 +43,7 @@
 - Tested MongoDB operations and aggregations
 - Final project integration and submission
 
-### Abreham Teshale (MySQL Implementation Lead)
+### Abreham Teshale (Business Analyst & Documentation)
 
 - Designed the Entity-Relationship (ER) Diagram
 - Performed normalization up to BCNF
@@ -51,7 +51,7 @@
 - Conducted background research on Addis Grand Hotel
 - Wrote Chapter 1 (Introduction, Problem Statement, Objectives)
 
-### Awach Garang (MongoDB Implementation Lead)
+### Awach Garang (Project Coordinator)
 
 - Helped with report formatting and references
 - Prepared survey questions for Annex
