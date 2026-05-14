@@ -2,14 +2,21 @@
 
 ---
 
-## **  **
+## \*\* \*\*
 
 **Course:** Database Systems  
 **Assignment:** Database Design Project  
 **Title:** Hotel Management System  
-**Student Name:** put here the student names .
-**Instructor:** put here the instructor name here.
-**Date:** 2026  
+**Student Name:**
+No Name ID
+1 Beka Solomon ETS 0242/17
+2 Deborah Mesfin ETS 0434/17
+3 Biruk Molla ETS 0336/17
+4 Abreham Teshale ETS 0076/17
+5 Awach Garang ETS 1869/17
+6 Gakeer Deng ETS 1865/17
+**Instructor:** Mr. Yaynshet Medhin
+**Date:** 2026
 
 ---
 
@@ -17,11 +24,11 @@
 
 Hotels manage essential operations such as reservations, customer records, room allocation, and billing. When these processes are handled manually or through disconnected systems, several challenges arise:
 
-- Double bookings due to poor coordination  
-- Data inconsistency across multiple records  
-- Inefficient management of guest and room information  
-- Lack of real-time room availability tracking  
-- Errors in billing and payment processing  
+- Double bookings due to poor coordination
+- Data inconsistency across multiple records
+- Inefficient management of guest and room information
+- Lack of real-time room availability tracking
+- Errors in billing and payment processing
 
 These issues reduce operational efficiency and negatively impact both staff performance and customer experience.
 
@@ -33,12 +40,12 @@ The objective of this project is to design a **centralized and well-structured d
 
 The system aims to:
 
-- Manage room bookings efficiently and accurately  
-- Store and maintain guest information in an organized manner  
-- Support smooth check-in and check-out processes  
-- Automate billing and payment tracking  
-- Provide real-time updates on room availability  
-- Improve data accuracy, consistency, and accessibility  
+- Manage room bookings efficiently and accurately
+- Store and maintain guest information in an organized manner
+- Support smooth check-in and check-out processes
+- Automate billing and payment tracking
+- Provide real-time updates on room availability
+- Improve data accuracy, consistency, and accessibility
 
 ---
 
@@ -66,13 +73,13 @@ These entities represent real-world components of a hotel system and are connect
 The **Entity-Relationship (ER) Diagram** provides a high-level representation of the system.
 
 It illustrates:
-- Entities and their attributes  
-- Relationships between entities  
-- Cardinalities (1:N, M:N)  
-- Primary and foreign keys  
+
+- Entities and their attributes
+- Relationships between entities
+- Cardinalities (1:N, M:N)
+- Primary and foreign keys
 
 <img width="1280" height="970" alt="image" src="https://github.com/user-attachments/assets/0eb59633-4da5-4775-898b-44ca71ce5f8a" />
-
 
 ---
 
@@ -81,17 +88,18 @@ It illustrates:
 The logical schema converts the ER diagram into relational tables.
 
 Each table includes:
-- Primary Keys (PK)  
-- Foreign Keys (FK)  
-- Attributes with appropriate data types  
+
+- Primary Keys (PK)
+- Foreign Keys (FK)
+- Attributes with appropriate data types
 
 This ensures:
-- Clear structure  
-- Efficient querying  
-- Strong referential integrity  
+
+- Clear structure
+- Efficient querying
+- Strong referential integrity
 
 <img width="2047" height="848" alt="image" src="https://github.com/user-attachments/assets/38fc381a-195f-465d-bdef-27a2e91a363e" />
-
 
 ---
 
@@ -100,9 +108,10 @@ This ensures:
 ## **6.1 Why Normalization is Important**
 
 Without normalization:
-- Data redundancy increases  
-- Updates become inconsistent  
-- Insert and delete operations may cause anomalies  
+
+- Data redundancy increases
+- Updates become inconsistent
+- Insert and delete operations may cause anomalies
 
 Normalization ensures a clean and efficient database design.
 
@@ -112,40 +121,43 @@ Normalization ensures a clean and efficient database design.
 
 The system follows these key functional dependencies:
 
-- guest_id → name, phone, email, address, nationality  
-- hotel_id → name, location  
-- type_id → name, description  
-- room_id → type_id, hotel_id, room_number, price_per_night, status  
-- staff_id → hotel_id, name, role  
-- booking_id → guest_id, check_in_date, check_out_date, total_amount, status  
-- payment_id → booking_id, amount, date, method  
-- review_id → guest_id, rating, comment  
-- service_id → booking_id, type, cost  
+- guest_id → name, phone, email, address, nationality
+- hotel_id → name, location
+- type_id → name, description
+- room_id → type_id, hotel_id, room_number, price_per_night, status
+- staff_id → hotel_id, name, role
+- booking_id → guest_id, check_in_date, check_out_date, total_amount, status
+- payment_id → booking_id, amount, date, method
+- review_id → guest_id, rating, comment
+- service_id → booking_id, type, cost
 
 ---
 
 ## **6.3 Normal Forms**
 
 ### **First Normal Form (1NF)**
-- All attributes contain atomic values  
-- No repeating groups  
 
-✔ All tables satisfy 1NF  
+- All attributes contain atomic values
+- No repeating groups
+
+✔ All tables satisfy 1NF
 
 ---
 
 ### **Second Normal Form (2NF)**
-- No partial dependency on composite keys  
 
-✔ All tables satisfy 2NF  
+- No partial dependency on composite keys
+
+✔ All tables satisfy 2NF
 
 ---
 
 ### **Third Normal Form (3NF)**
-- No transitive dependency  
-- Non-key attributes depend only on the primary key  
 
-✔ All tables satisfy 3NF  
+- No transitive dependency
+- Non-key attributes depend only on the primary key
+
+✔ All tables satisfy 3NF
 
 ---
 
@@ -156,9 +168,10 @@ A table is in BCNF if:
 > Every determinant is a candidate key
 
 ✔ In this system:
-- Each table has a well-defined primary key  
-- All dependencies are based on that key  
-- No non-key attribute determines another non-key attribute  
+
+- Each table has a well-defined primary key
+- All dependencies are based on that key
+- No non-key attribute determines another non-key attribute
 
 ---
 
@@ -166,10 +179,10 @@ A table is in BCNF if:
 
 The database is fully normalized up to **BCNF**, ensuring:
 
-- Minimal redundancy  
-- High data consistency  
-- Efficient data management  
-- Scalability  
+- Minimal redundancy
+- High data consistency
+- Efficient data management
+- Scalability
 
 ---
 
@@ -179,10 +192,10 @@ The database is fully normalized up to **BCNF**, ensuring:
 
 The system includes input forms for:
 
-- Guest registration  
-- Booking creation  
-- Payment entry  
-- Service requests  
+- Guest registration
+- Booking creation
+- Payment entry
+- Service requests
 
 These forms ensure structured and accurate data entry.
 
@@ -192,9 +205,9 @@ These forms ensure structured and accurate data entry.
 
 The system generates outputs such as:
 
-- Booking confirmations  
-- Payment receipts  
-- Room availability status  
+- Booking confirmations
+- Payment receipts
+- Room availability status
 
 ---
 
@@ -202,10 +215,10 @@ The system generates outputs such as:
 
 The system supports reports including:
 
-- Booking history  
-- Revenue and payment summaries  
-- Room occupancy reports  
-- Guest activity reports  
+- Booking history
+- Revenue and payment summaries
+- Room occupancy reports
+- Guest activity reports
 
 These reports assist in decision-making and operational analysis.
 
@@ -215,10 +228,9 @@ These reports assist in decision-making and operational analysis.
 
 This project presents a well-structured database design for a Hotel Management System. By applying normalization up to BCNF, the system achieves:
 
-- Reduced redundancy  
-- Improved data integrity  
-- Efficient data handling  
-- Better scalability for real-world applications  
+- Reduced redundancy
+- Improved data integrity
+- Efficient data handling
+- Better scalability for real-world applications
 
 The final design provides a strong foundation for implementing a complete hotel management solution.
-

@@ -33,13 +33,15 @@
       "roomRating": 5,
       "serviceRating": 5,
       "comment": "Perfect experience! Will definitely come back again.",
-      "reviewDate": "2026-04-25"
+      "reviewDate": "2026-04-25",
+      "tags": ["perfect", "will_return"]
     }
   ],
+
   "roomServiceOrders": [
     {
       "_id": "RS001",
-      "guestId": "G123",
+      "guestId": "G001",
       "bookingId": "B001",
       "roomNumber": "A-101",
       "orderDate": "2026-04-25",
@@ -51,13 +53,37 @@
       "totalAmount": 680,
       "status": "Delivered",
       "specialRequest": "Extra spicy on the chicken"
+    },
+    {
+      "_id": "RS002",
+      "guestId": "G002",
+      "bookingId": "B002",
+      "roomNumber": "B-205",
+      "orderDate": "2026-04-22",
+      "items": [
+        { "item": "Club Sandwich", "quantity": 2, "price": 180 },
+        { "item": "Orange Juice", "quantity": 2, "price": 80 }
+      ],
+      "totalAmount": 520,
+      "status": "Delivered",
+      "specialRequest": ""
     }
   ],
+
   "guestFeedback": [
     {
       "_id": "F001",
       "guestName": "Dawit Kebede",
+      "bookingId": "B003",
       "suggestions": "Add more variety in breakfast menu",
+      "rating": 4,
+      "submittedDate": "2026-04-23"
+    },
+    {
+      "_id": "F002",
+      "guestName": "Meron Tesfaye",
+      "bookingId": "B002",
+      "suggestions": "Improve WiFi speed during evenings",
       "rating": 4,
       "submittedDate": "2026-04-23"
     }

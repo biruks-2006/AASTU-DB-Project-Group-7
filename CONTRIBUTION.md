@@ -16,7 +16,7 @@
 
 ## Detailed Contributions
 
-### Beka Solomon (MongoDB Implementation Lead)
+### Beka Solomon (MySQL Implementation Lead)
 
 - Managed group meetings and task distribution
 - Implemented complete MySQL database schema
@@ -34,7 +34,7 @@
 - Performed normalization up to BCNF
 - Prepared normalization.pdf document
 
-### Biruk Molla (MySQL Implementation Lead)
+### Biruk Molla (MongoDB Implementation Lead)
 
 - Created and maintained GitHub repository structure
 - Designed MongoDB collections (reviews, roomServiceOrders)
