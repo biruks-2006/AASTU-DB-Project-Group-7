@@ -208,6 +208,9 @@ The system generates outputs such as:
 - Booking confirmations
 - Payment receipts
 - Room availability status
+- Payment method breakdown reports
+- Today's check-ins and check-outs
+- Rooms currently under maintenance
 
 ---
 
