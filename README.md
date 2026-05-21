@@ -8,13 +8,14 @@
 **Assignment:** Database Design Project  
 **Title:** Hotel Management System  
 **Student Name:**
-No Name ID
-1 Beka Solomon ETS 0242/17
-2 Deborah Mesfin ETS 0434/17
-3 Biruk Molla ETS 0336/17
-4 Abreham Teshale ETS 0076/17
-5 Awach Garang ETS 1869/17
-6 Gakeer Deng ETS 1865/17
+| No | Name | ID |
+|----|-------------------|-------------|
+| 1 | Beka Solomon | ETS 0242/17 |
+| 2 | Deborah Mesfin | ETS 0434/17 |
+| 3 | Biruk Molla | ETS 0336/17 |
+| 4 | Abreham Teshale | ETS 0076/17 |
+| 5 | Awach Garang | ETS 1869/17 |
+| 6 | Gakeer Deng | ETS 1865/17 |
 **Instructor:** Mr. Yaynshet Medhin
 **Date:** 2026
 
@@ -221,6 +222,67 @@ The system supports reports including:
 - Guest activity reports
 
 These reports assist in decision-making and operational analysis.
+
+---
+
+# Technologies Used
+
+MySQL
+MySQL is used as the primary relational database to store and manage all structured data.
+
+Purpose: Stores all core entities — guests, rooms, bookings, payments, staff, and more
+Why MySQL: Enforces relational integrity via foreign keys, supports complex JOINs, and is ACID-compliant for reliable booking and payment operations
+
+MongoDB
+MongoDB is used as a supplementary NoSQL database for flexible or semi-structured data.
+
+Purpose: Stores guest activity logs, service request details, and audit records
+Why MongoDB: Schema-less design handles variable data structures that don't map cleanly to relational tables
+
+# How to Run the Project
+
+Prerequisites
+
+MySQL
+MongoDB
+
+Step 1 — Set Up MySQL
+bash# Start MySQL
+sudo service mysql start # Linux/macOS
+net start MySQL80 # Windows
+
+# Log in
+
+mysql -u root -p
+
+# Create and use the database
+
+CREATE DATABASE hotel_management;
+USE hotel_management;
+
+# Run the schema script
+
+mysql -u root -p hotel_management < sql/schema.sql
+Step 2 — Set Up MongoDB
+bash# Start MongoDB
+sudo service mongod start # Linux/macOS
+net start MongoDB # Windows
+
+# Open shell and create collections
+
+mongosh
+use hotel_management_logs
+db.createCollection("guestLogs")
+db.createCollection("serviceRequests")
+db.createCollection("auditTrail")
+Step 3 — Run Sample Queries
+sql-- Check available rooms
+SELECT room_number, price_per_night, status
+FROM Room WHERE status = 'available';
+
+-- View bookings with guest names
+SELECT b.booking_id, g.name, b.check_in_date, b.check_out_date
+FROM Booking b JOIN Guest g ON b.guest_id = g.guest_id;
 
 ---
 
